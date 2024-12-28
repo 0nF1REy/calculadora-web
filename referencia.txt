@@ -1,0 +1,16 @@
+A criação desse projeto, desenvolvido por Alan Ryan da Silva Domingues,
+teve como base os seguintes materiais de apoio e recursos utilizados,
+com o último acesso registrado em 27 de dezembro de 2024.
+
+|Alan-------------------------20--------------------------------|
+|                                                               |  
+|   https://youtu.be/4dvrA5rXJ6E?si=qx8YdQi-1C5HE_5n            |
+|   ("VIRTUAL CODE")                                            |
+|---------------------------------------------------------------|   
+|   https://fontawesome.com/                                    |  
+|   ("Font Awesome")                                            |  
+|---------------------------------------------------------------|   
+|   https://favicomatic.com/                                    |  
+|   ("Favic-o-Matic")                                           | 
+|                                                               |
+|-----------------------------24----------------------------Ryan|   

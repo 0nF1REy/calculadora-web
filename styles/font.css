@@ -1,0 +1,8 @@
+@font-face {
+    font-family: fenix;
+    src: url('../assets/font/Fenix-Regular.ttf');
+}
+@font-face {
+    font-family: SHOOGIE;
+    src: url('../assets/font/SHOOGIE.otf') format('truetype');
+}

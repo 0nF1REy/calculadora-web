@@ -1,0 +1,63 @@
+@media (max-height: 500px) {
+    body {
+  
+        justify-content: center; 
+        align-items: center; 
+        padding: 10px;
+    }
+    main {
+        width: auto;
+        margin-top: 0;
+    }
+    section{
+        width: auto; 
+    }
+    .calculator {
+        max-width: 350px;
+        height: auto; 
+        margin: 0 10px; 
+    }
+
+    .display {
+        width: 100%;
+    }
+
+    .buttons {
+       height: auto;
+    }
+
+     .row {
+       width: auto;
+       flex-wrap: wrap;
+     }
+    .row button {
+        width: 50px;
+        height: 20px;
+        margin: 2px;
+        font-size: 10px;
+    }
+    .row button i {
+      font-size: 13px;
+  }
+    
+    header, footer {
+       width: 100%;
+       text-align: center;
+       padding: 5px;
+       margin: 5px 0;
+    }
+}
+
+@media (max-height: 350px) {
+    .calculator {
+        max-width: 100%;
+     }
+    .row button {
+        width: 40px;
+        height: 30px;
+        font-size: 20px;
+    }
+    .row button i {
+      font-size: 11px;
+  }
+}

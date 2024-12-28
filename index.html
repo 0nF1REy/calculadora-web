@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <!-- ================ -->
+    <title>Calculadora web</title>
+    <!-- ==== META ==== -->
+    <meta name="Author" content="Alan Ryan da Silva Domingues">
+    <meta name="keywords" content="Calculadora">
+    <meta name="description"
+        content="Calculadora web desenvolvida em JavaScript, HTML e CSS. Um exemplo de aplicação prática com manipulação de DOM, eventos de teclado e operações matemáticas.">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ==== OPEN GRAPH ==== -->
+    <meta property="og:title" content="Calculadora web">
+    <meta property="og:description" content="Calculadora web desenvolvida em JavaScript, HTML e CSS. Um exemplo de aplicação prática com manipulação de DOM, eventos de teclado e operações matemáticas">
+    <meta property="og:image" content="./assets/img/pagina-principal.png">
+    <meta property="og:type" content="website">
+    <!-- ==== FAVICON and ICONS ==== -->
+    <link rel="shortcut icon" href="./assets/favicon/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="./assets/icons/apple-touch-icon-57x57.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="./assets/icons/apple-touch-icon-114x114.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="./assets/icons/apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="./assets/icons/apple-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="60x60" href="./assets/icons/apple-touch-icon-60x60.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="./assets/icons/apple-touch-icon-120x120.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="./assets/icons/apple-touch-icon-76x76.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="./assets/icons/apple-touch-icon-152x152.png" />
+    <!-- ==== MICROSOFT TILE ==== -->
+    <meta name="application-name" content="Calculadora web" />
+    <meta name="msapplication-TileColor" content="#FFFFFF" />
+    <meta name="msapplication-TileImage" content="./assets/icons/mstile-144x144.png" />
+    <meta name="msapplication-square70x70logo" content="./assets/icons/mstile-70x70.png" />
+    <meta name="msapplication-square150x150logo" content="./assets/icons/mstile-150x150.png" />
+    <meta name="msapplication-wide310x150logo" content="./assets/icons/mstile-310x150.png" />
+    <meta name="msapplication-square310x310logo" content="./assets/icons/mstile-310x310.png" />
+    <!-- ==== ICONS: FONTAWESOME ==== -->
+    <link rel="stylesheet" href="./assets/icons/fontawesome/css/fontawesome.min.css" />
+    <link rel="stylesheet" href="./assets/icons/fontawesome/css/brands.min.css" />
+    <link rel="stylesheet" href="./assets/icons/fontawesome/css/solid.min.css" />
+    <!-- ==== CSS and SCRIPT ==== -->
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/media.css">
+    <link rel="stylesheet" href="./styles/font.css">
+    <script src="./scripts/script.js" defer></script>
+    <!-- ================ -->
+</head>
+
+<body>
+    <header>
+        <div>
+            <h1>calculadora <i class="fa-solid fa-calculator"></i></h1>
+        </div>
+    </header>
+    <main>
+        <section>
+            <div class="calculator">
+                <div class="display">
+                    <input type="text" id="display" placeholder="0" readonly autocomplete="off" inputmode="decimal">
+                </div>
+                <div class="buttons">
+                    <div class="row row1">
+                        <button id="limpar" data-action="clear" aria-label="Limpar">AC</button>
+                        <button id="apagar" data-action="delete" aria-label="Apagar">DE</button>
+                        <button id="vir" data-action="append" data-value="," aria-label="Virgula">,</button>
+                        <button id="rai" data-action="function" data-value="sqrt" aria-label="Raiz Quadrada">√</button>
+                    </div>
+                    <div class="row row2">
+                        <button id="sin" data-action="function" data-value="sin" aria-label="Seno">Sin</button>
+                        <button id="cos" data-action="function" data-value="cos" aria-label="Cosseno">Cos</button>
+                        <button id="tan" data-action="function" data-value="tan" aria-label="Tangente">Tan</button>
+                        <button id="div" data-action="operator" data-value="÷" aria-label="Dividir"><i
+                                class="fa-solid fa-divide"></i></button>
+                    </div>
+                    <div class="row row3">
+                        <button data-action="append" data-value="7" aria-label="Sete">7</button>
+                        <button data-action="append" data-value="8" aria-label="Oito">8</button>
+                        <button data-action="append" data-value="9" aria-label="Nove">9</button>
+                        <button id="mul" data-action="operator" data-value="x" aria-label="Multiplicar"><i
+                                class="fa-solid fa-x"></i></button>
+                    </div>
+                    <div class="row row4">
+                        <button data-action="append" data-value="4" aria-label="Quatro">4</button>
+                        <button data-action="append" data-value="5" aria-label="Cinco">5</button>
+                        <button data-action="append" data-value="6" aria-label="Seis">6</button>
+                        <button id="sub" data-action="operator" data-value="-" aria-label="Subtrair"><i
+                                class="fa-solid fa-minus"></i></button>
+                    </div>
+                    <div class="row row5">
+                        <button data-action="append" data-value="1" aria-label="Um">1</button>
+                        <button data-action="append" data-value="2" aria-label="Dois">2</button>
+                        <button data-action="append" data-value="3" aria-label="Três">3</button>
+                        <button id="somar" data-action="operator" data-value="+" aria-label="Somar"><i
+                                class="fa-solid fa-plus"></i></button>
+                    </div>
+                    <div class="row row6">
+                        <button data-action="append" data-value="0" aria-label="Zero">0</button>
+                        <button data-action="append" data-value="00" aria-label="Zero Duplo">00</button>
+                        <button id="equal" data-action="calculate" aria-label="Calcular"><i
+                                class="fa-solid fa-equals"></i></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        ©2024 Alan Ryan
+    </footer>
+</body>
+
+</html>
